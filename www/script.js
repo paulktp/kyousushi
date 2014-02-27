@@ -14,10 +14,12 @@ function onDeviceReady() {
 }
 
 function iabLoadStart(event) {
+	navigator.notification.activityStart("Chargement", "patientez..."); 
     //alert(event.type + ' - ' + event.url);
 }
 
 function iabLoadStop(event) {
+	navigator.notification.activityStop();
     //alert(event.type + ' - ' + event.url);
 }
 
