@@ -45,9 +45,6 @@
 	<icon src="icons/android/ico_96.png" gap:platform="android" gap:density="xhdpi" />
 	<icon src="icons/android/ico_144.png" gap:platform="android" gap:density="xxhdpi" />
 	
-	<icon src="icons/winphone/ico_48.png" gap:platform="winphone" />
-	<icon src="icons/winphone/ico_173.png" gap:platform="winphone" gap:role="background" />
-	
 	<gap:splash src="splash.png" />
 	
 	<gap:splash src="splash/ios/320x480.png" gap:platform="ios" width="320" height="480" />
