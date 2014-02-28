@@ -4,7 +4,7 @@ var iabRef = null;
 function onDeviceReady() {
 	setTimeout(function() {
         navigator.splashscreen.hide();
-    }, 1000);
+    }, 2000);
 
 	
 	//$("#app-status-ul").append('<li>deviceready event received</li>');

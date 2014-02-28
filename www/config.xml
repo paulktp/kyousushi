@@ -22,6 +22,8 @@
     <preference name="phonegap-version" value="2.9.0" />
     <preference name="show-splash-screen-spinner" value="false" />
     <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    
     
     <preference name="prerendered-icon" value="true" />
     <preference name="exit-on-suspend" value="false" />
