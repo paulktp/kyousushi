@@ -2,6 +2,10 @@
 var iabRef = null;
 
 function onDeviceReady() {
+	setTimeout(function() {
+        navigator.splashscreen.hide();
+    }, 1000);
+
 	
 	//$("#app-status-ul").append('<li>deviceready event received</li>');
 	
@@ -14,12 +18,22 @@ function onDeviceReady() {
 }
 
 function iabLoadStart(event) {
-	navigator.notification.activityStart("Chargement", "patientez..."); 
+	if(device.platform =="Android"){
+		navigator.notification.activityStart("Chargement", "patientez..."); 
+	}else if(device.platform =="iOS"){
+		navigator.splashscreen.show();
+	}
+	
     //alert(event.type + ' - ' + event.url);
 }
 
 function iabLoadStop(event) {
-	navigator.notification.activityStop();
+
+	if(device.platform =="Android"){
+		navigator.notification.activityStop();
+	}else if(device.platform =="iOS"){
+		navigator.splashscreen.hide();
+	}
     //alert(event.type + ' - ' + event.url);
 }
 
