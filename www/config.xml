@@ -18,7 +18,7 @@
         KTP Concept
     </author>
     
-    <preference name="phonegap-version" value="2.9.0" />
+    <preference name="phonegap-version" value="3.1.0" />
     <preference name="show-splash-screen-spinner" value="false" />
     <preference name="auto-hide-splash-screen" value="true" />
     
@@ -65,20 +65,11 @@
 	 
 	 <gap:platform name="ios" />
 	 <gap:platform name="android" />
-	 
-	 
-	  <!--
-      If you do not want any permissions to be added to your app, add the
-      following tag to your config.xml; you will still have the INTERNET
-      permission on your app, which PhoneGap requires.
-    -->
-    <preference name="permissions" value="none"/>
+	     
     
-	 <!-- to enable individual permissions use the following examples -->
-    <feature name="http://api.phonegap.com/1.0/device"/>
-    <feature name="http://api.phonegap.com/1.0/notification"/>
-    
-    
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <gap:plugin name="org.apache.cordova.device" />
+    <gap:plugin name="org.apache.cordova.dialogs" />
 	 
 
 </widget>
