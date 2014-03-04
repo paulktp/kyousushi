@@ -9,7 +9,7 @@ function onDeviceReady() {
 	
 	//$("#app-status-ul").append('<li>deviceready event received</li>');
 	
-	iabRef = window.open('http://wp1.ktp-concept.com/', '_blank', 'location=no,toolbar=no');
+	iabRef = window.open('http://www.kyousushi.com/', '_blank', 'location=no,toolbar=no');
     iabRef.addEventListener('loadstart', iabLoadStart);
     iabRef.addEventListener('loadstop', iabLoadStop);
     iabRef.removeEventListener('loaderror', iabLoadError);

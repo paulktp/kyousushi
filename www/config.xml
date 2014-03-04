@@ -8,11 +8,10 @@
 
     <!-- versionCode is optional and Android only -->
  
-    <name>Kyousushi</name>
+    <name>Kyou Sushi</name>
     
-
     <description>
-        Application Kyousushi.
+        Application Kyousushi
     </description>
 
     <author href="http://www.ktp.net" email="contact@ktp.net">
@@ -22,8 +21,6 @@
     <preference name="phonegap-version" value="2.9.0" />
     <preference name="show-splash-screen-spinner" value="false" />
     <preference name="auto-hide-splash-screen" value="true" />
-    <preference name="AutoHideSplashScreen" value="false" />
-    
     
     <preference name="prerendered-icon" value="true" />
     <preference name="exit-on-suspend" value="false" />
@@ -32,16 +29,56 @@
     <preference name="android-minSdkVersion" value="15" />
     
     <icon src="icon.png" />
-    
-    
+    <!-- 
+    <icon src="icons/ios/ico_57.png" gap:platform="ios" width="57" height="57" />
+	<icon src="icons/ios/ico_72.png" gap:platform="ios" width="72" height="72" />
+	<icon src="icons/ios/ico_114.png" gap:platform="ios" width="114" height="114" />
+	<icon src="icons/ios/ico_144.png" gap:platform="ios" width="144" height="144" />
+	
+	<icon src="icons/ios/ico_76.png" gap:platform="ios" width="76" height="76" />
+	<icon src="icons/ios/ico_120.png" gap:platform="ios" width="120" height="120" />
+	<icon src="icons/ios/ico_152.png" gap:platform="ios" width="152" height="152" />
+	
+	<icon src="icons/android/ico_36.png" gap:platform="android" gap:density="ldpi" />
+	<icon src="icons/android/ico_48.png" gap:platform="android" gap:density="mdpi" />
+	<icon src="icons/android/ico_72.png" gap:platform="android" gap:density="hdpi" />
+	<icon src="icons/android/ico_96.png" gap:platform="android" gap:density="xhdpi" />
+	<icon src="icons/android/ico_144.png" gap:platform="android" gap:density="xxhdpi" />-->
 	
 	<gap:splash src="splash.png" />
 	
+	<!-- 
+	<gap:splash src="splash/ios/320x480.png" gap:platform="ios" width="320" height="480" />
+	<gap:splash src="splash/ios/640x960.png" gap:platform="ios" width="640" height="960" />
+	<gap:splash src="splash/ios/640x1136.png" gap:platform="ios" width="640" height="1136" /> -->
+	<!--<gap:splash src="splash/ios/Default-Portrait.png" gap:platform="ios" width="768" height="1024" />
+    <gap:splash src="splash/ios/Default-Landscape_at_2x.png" gap:platform="ios" width="2048" height="1496" />
+	<gap:splash src="splash/ios/Default-Portrait_at_2x.png" gap:platform="ios" width="1536" height="2008" />-->
 	
+	<!-- 
+	<gap:splash src="splash/android/200x320.png" gap:platform="android" gap:density="ldpi" />
+	<gap:splash src="splash/android/320x480.png" gap:platform="android" gap:density="mdpi" />
+	<gap:splash src="splash/android/480x800.png" gap:platform="android" gap:density="hdpi" />
+	<gap:splash src="splash/android/640x960.png" gap:platform="android" gap:density="xhdpi" />-->
 	
    
 	 
 	 <gap:platform name="ios" />
 	 <gap:platform name="android" />
+	 
+	 
+	  <!--
+      If you do not want any permissions to be added to your app, add the
+      following tag to your config.xml; you will still have the INTERNET
+      permission on your app, which PhoneGap requires.
+    -->
+    <preference name="permissions" value="none"/>
+    
+	 <!-- to enable individual permissions use the following examples -->
+    <feature name="http://api.phonegap.com/1.0/device"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>
+    
+    
+	 
 
 </widget>
