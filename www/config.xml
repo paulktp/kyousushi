@@ -11,7 +11,7 @@
     <name>Kyou Sushi</name>
     
     <description>
-        Application Kyousushi
+        Application Kyou Sushi
     </description>
 
     <author href="http://www.ktp.net" email="contact@ktp.net">
@@ -29,37 +29,37 @@
     <preference name="android-minSdkVersion" value="15" />
     
     <icon src="icon.png" />
-    <!-- 
-    <icon src="icons/ios/ico_57.png" gap:platform="ios" width="57" height="57" />
-	<icon src="icons/ios/ico_72.png" gap:platform="ios" width="72" height="72" />
-	<icon src="icons/ios/ico_114.png" gap:platform="ios" width="114" height="114" />
-	<icon src="icons/ios/ico_144.png" gap:platform="ios" width="144" height="144" />
+    
+    <icon src="icons/ico_57.png" gap:platform="ios" width="57" height="57" />
+	<icon src="icons/ico_72.png" gap:platform="ios" width="72" height="72" />
+	<icon src="icons/ico_114.png" gap:platform="ios" width="114" height="114" />
+	<icon src="icons/ico_144.png" gap:platform="ios" width="144" height="144" />
 	
-	<icon src="icons/ios/ico_76.png" gap:platform="ios" width="76" height="76" />
-	<icon src="icons/ios/ico_120.png" gap:platform="ios" width="120" height="120" />
-	<icon src="icons/ios/ico_152.png" gap:platform="ios" width="152" height="152" />
+	<icon src="icons/ico_76.png" gap:platform="ios" width="76" height="76" />
+	<icon src="icons/ico_120.png" gap:platform="ios" width="120" height="120" />
+	<icon src="icons/ico_152.png" gap:platform="ios" width="152" height="152" />
 	
-	<icon src="icons/android/ico_36.png" gap:platform="android" gap:density="ldpi" />
-	<icon src="icons/android/ico_48.png" gap:platform="android" gap:density="mdpi" />
-	<icon src="icons/android/ico_72.png" gap:platform="android" gap:density="hdpi" />
-	<icon src="icons/android/ico_96.png" gap:platform="android" gap:density="xhdpi" />
-	<icon src="icons/android/ico_144.png" gap:platform="android" gap:density="xxhdpi" />-->
+	<icon src="icons/ico_36.png" gap:platform="android" gap:density="ldpi" />
+	<icon src="icons/ico_48.png" gap:platform="android" gap:density="mdpi" />
+	<icon src="icons/ico_72.png" gap:platform="android" gap:density="hdpi" />
+	<icon src="icons/ico_96.png" gap:platform="android" gap:density="xhdpi" />
+	<icon src="icons/ico_144.png" gap:platform="android" gap:density="xxhdpi" />
 	
 	<gap:splash src="splash.png" />
 	
-	<!-- 
-	<gap:splash src="splash/ios/320x480.png" gap:platform="ios" width="320" height="480" />
-	<gap:splash src="splash/ios/640x960.png" gap:platform="ios" width="640" height="960" />
-	<gap:splash src="splash/ios/640x1136.png" gap:platform="ios" width="640" height="1136" /> -->
-	<!--<gap:splash src="splash/ios/Default-Portrait.png" gap:platform="ios" width="768" height="1024" />
-    <gap:splash src="splash/ios/Default-Landscape_at_2x.png" gap:platform="ios" width="2048" height="1496" />
-	<gap:splash src="splash/ios/Default-Portrait_at_2x.png" gap:platform="ios" width="1536" height="2008" />-->
 	
-	<!-- 
-	<gap:splash src="splash/android/200x320.png" gap:platform="android" gap:density="ldpi" />
-	<gap:splash src="splash/android/320x480.png" gap:platform="android" gap:density="mdpi" />
-	<gap:splash src="splash/android/480x800.png" gap:platform="android" gap:density="hdpi" />
-	<gap:splash src="splash/android/640x960.png" gap:platform="android" gap:density="xhdpi" />-->
+	<gap:splash src="splash/320x480.png" gap:platform="ios" width="320" height="480" />
+	<gap:splash src="splash/640x960.png" gap:platform="ios" width="640" height="960" />
+	<gap:splash src="splash/640x1136.png" gap:platform="ios" width="640" height="1136" />
+	<gap:splash src="splash/Default-Portrait.png" gap:platform="ios" width="768" height="1024" />
+    <gap:splash src="splash/Default-Landscape_at_2x.png" gap:platform="ios" width="2048" height="1496" />
+	<gap:splash src="splash/Default-Portrait_at_2x.png" gap:platform="ios" width="1536" height="2008" />
+	
+	 
+	<gap:splash src="splash/200x320.png" gap:platform="android" gap:density="ldpi" />
+	<gap:splash src="splash/320x480.png" gap:platform="android" gap:density="mdpi" />
+	<gap:splash src="splash/480x800.png" gap:platform="android" gap:density="hdpi" />
+	<gap:splash src="splash/640x960.png" gap:platform="android" gap:density="xhdpi" />
 	
    
 	 
