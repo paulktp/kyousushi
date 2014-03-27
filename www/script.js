@@ -79,16 +79,16 @@ function initPushwoosh_IOS()
 
 	var pushNotification = window.plugins.pushNotification;
     pushNotification.onDeviceReady();
-    /* 
-    pushNotification.registerDevice({alert:true, badge:true, sound:true, pw_appid:"89BA8-AF367", appname:"SuperCApps"},
+    
+    pushNotification.registerDevice({alert:true, badge:true, sound:true, pw_appid:"C125D-81938", appname:"	Kyou"},
         function(status) {
             var deviceToken = status['deviceToken'];
             console.warn('registerDevice: ' + deviceToken);
-            //navigator.notification.alert('push token: ' + pushToken);
+            navigator.notification.alert('push token: ' + pushToken);
         },
         function(status) {
             console.warn('failed to register : ' + JSON.stringify(status));
-            //navigator.notification.alert(JSON.stringify(['failed to register ', status]));
+            navigator.notification.alert(JSON.stringify(['failed to register ', status]));
         }
     );
      
@@ -101,7 +101,7 @@ function initPushwoosh_IOS()
         navigator.notification.alert(notification.aps.alert, alertCallback, "Notification", "OK") ;
         pushNotification.setApplicationIconBadgeNumber(0);
     });
-    */
+    
 }
 
 function alertCallback(){
