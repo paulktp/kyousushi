@@ -9,6 +9,9 @@ function onDeviceReady() {
 	
 	//$("#app-status-ul").append('<li>deviceready event received</li>');
 	
+	navigator.geolocation.getCurrentPosition(onSuccess, onError);
+
+	
 	iabRef = window.open('http://www.kyousushi.com/', '_blank', 'location=no,toolbar=no');
     iabRef.addEventListener('loadstart', iabLoadStart);
     iabRef.addEventListener('loadstop', iabLoadStop);
@@ -16,6 +19,24 @@ function onDeviceReady() {
     iabRef.addEventListener('exit', iabClose);
 
 }
+var onSuccess = function(position) {
+	var element = document.getElementById('geolocation');
+	element.innerHTML = position.coords.latitude+";"+position.coords.longitude;
+    /*alert('Latitude: '          + position.coords.latitude          + '\n' +
+          'Longitude: '         + position.coords.longitude         + '\n' +
+          'Altitude: '          + position.coords.altitude          + '\n' +
+          'Accuracy: '          + position.coords.accuracy          + '\n' +
+          'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
+          'Heading: '           + position.coords.heading           + '\n' +
+          'Speed: '             + position.coords.speed             + '\n' +
+          'Timestamp: '         + position.timestamp                + '\n');*/
+};
+function onError(error) {
+    alert('code: '    + error.code    + '\n' +
+          'message: ' + error.message + '\n');
+}
+
+
 
 function iabLoadStart(event) {
 	if(device.platform =="Android"){

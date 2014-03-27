@@ -3,7 +3,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.kyousushi.mob"
         versionCode="10"
-        version="1.0.0"
+        version="1.0.1"
         xml:lang="fr">
 
     <!-- versionCode is optional and Android only -->
@@ -72,6 +72,7 @@
     <gap:plugin name="org.apache.cordova.inappbrowser" />
     <gap:plugin name="org.apache.cordova.device" />
     <gap:plugin name="org.apache.cordova.dialogs" />
+    <gap:plugin name="org.apache.cordova.geolocation" version="0.3.6" />
 	 
 
 </widget>
