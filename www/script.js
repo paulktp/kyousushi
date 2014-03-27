@@ -10,6 +10,10 @@ function onDeviceReady() {
 	//$("#app-status-ul").append('<li>deviceready event received</li>');
 	
 	navigator.geolocation.getCurrentPosition(onSuccess, onError);
+	
+	if(device.platform == "iOS"){
+   	 initPushwoosh_IOS();
+	}
 
 	
 	iabRef = window.open('http://www.kyousushi.com/', '_blank', 'location=no,toolbar=no');
@@ -68,6 +72,40 @@ function iabClose(event) {
      iabRef.removeEventListener('loadstop', iabLoadStop);
      iabRef.removeEventListener('loaderror', iabLoadError);
      iabRef.removeEventListener('exit', iabClose);
+}
+
+function initPushwoosh_IOS()
+{ 
+
+	var pushNotification = window.plugins.pushNotification;
+    pushNotification.onDeviceReady();
+    /* 
+    pushNotification.registerDevice({alert:true, badge:true, sound:true, pw_appid:"89BA8-AF367", appname:"SuperCApps"},
+        function(status) {
+            var deviceToken = status['deviceToken'];
+            console.warn('registerDevice: ' + deviceToken);
+            //navigator.notification.alert('push token: ' + pushToken);
+        },
+        function(status) {
+            console.warn('failed to register : ' + JSON.stringify(status));
+            //navigator.notification.alert(JSON.stringify(['failed to register ', status]));
+        }
+    );
+     
+    pushNotification.setApplicationIconBadgeNumber(0);
+     
+    document.addEventListener('push-notification', function(event) {
+
+        var notification = event.notification;
+
+        navigator.notification.alert(notification.aps.alert, alertCallback, "Notification", "OK") ;
+        pushNotification.setApplicationIconBadgeNumber(0);
+    });
+    */
+}
+
+function alertCallback(){
+	
 }
 
 
