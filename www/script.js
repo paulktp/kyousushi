@@ -84,11 +84,11 @@ function initPushwoosh_IOS()
         function(status) {
             var deviceToken = status['deviceToken'];
             console.warn('registerDevice: ' + deviceToken);
-            navigator.notification.alert('push token: ' + pushToken);
+            //navigator.notification.alert('push token: ' + pushToken);
         },
         function(status) {
             console.warn('failed to register : ' + JSON.stringify(status));
-            navigator.notification.alert(JSON.stringify(['failed to register ', status]));
+            //navigator.notification.alert(JSON.stringify(['failed to register ', status]));
         }
     );
      
